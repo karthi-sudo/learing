@@ -1,0 +1,29 @@
+git clone <central repo> <workspace>
+git add .
+git status
+git commit -m "message"
+git log -num --oneline
+git push
+git pull
+
+git branch
+git branch -a
+git branch <branch name>
+git checkout branchname
+git merge <source> <dest> - if we not mention dest, it will take current branch as dest
+git cherry-pick <commit id> 
+
+
+backup & undo
+git stash
+git stash list
+git stash apply <index>
+git stash clear
+
+undo
+git reset --soft (head reference in repo)
+git reset --mixed (staging area + head ref)
+git reset --hard (WD + SA + Repo)
+
+undo the commit:
+git revert <commit id>
